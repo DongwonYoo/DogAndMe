@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Kosugi Maru', sans-serif;
     background-color: #ffffff;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .navbar-light .navbar-brand {
-    font-family: NanumSquareR;
+    font-family: 'Kosugi Maru', sans-serif;
     line-height: 1.68;
     text-align: left;
     color: #35465d;
@@ -148,14 +148,14 @@ body {
 }
 
 .title {
-    font-family: NanumSquareR;
+    font-family: 'Kosugi Maru', sans-serif;
     line-height: 1.67;
     text-align: center;
     color: #35465d;
 }
 
 .subtitle {
-    font-family: NanumSquareR;
+    font-family: 'Kosugi Maru', sans-serif;
     line-height: 1.53;
     text-align: center;
     color: #35465d;
