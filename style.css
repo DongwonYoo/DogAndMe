@@ -9,8 +9,12 @@ body {
     border: solid 1.5px #f6f7fa;
     background-color: #f6f7fa;
     padding: 11% 4%;
-
-
+}
+.file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: -15%;
+    padding: 20px;
 }
 
 .file-upload-btn {
@@ -94,12 +98,6 @@ body {
     margin: 0 auto;
 }
 
-.file-upload-image {
-    max-height: 200px;
-    max-width: 200px;
-    margin: auto;
-    padding: 20px;
-}
 
 .remove-image {
     width: 200px;
