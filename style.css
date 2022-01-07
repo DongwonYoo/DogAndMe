@@ -100,18 +100,17 @@ body {
 
 
 .remove-image {
-    width: 200px;
-    margin: 0;
     color: #fff;
-    background: #cd4535;
     border: none;
     padding: 10px;
-    border-radius: 4px;
-    border-bottom: 4px solid #b02818;
+    border-radius: 40px;
+    border: solid 1.5px #35465d;
+    background-color: #35465d;
     transition: all .2s ease;
     outline: none;
     text-transform: uppercase;
     font-weight: 700;
+    
 }
 
 .remove-image:hover {
@@ -172,12 +171,22 @@ body {
         font-size: 2rem;
     }
 }
-
+.result-messege{
+    margin-top: -2%;
+    color: #f36995;
+}
 .result-img img{
     max-width: 15rem;
     max-height: 25rem;
 }
-
+.result-body{
+    font-size: 1rem;
+    font-weight:bolder;
+}
+.result-explain{
+    font-size: 1.5rem;
+    color: #f36995;
+}
 p {
     margin-top: 0;
     margin-bottom: 1.5rem;
