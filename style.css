@@ -141,8 +141,12 @@ body {
 .navbar-light .navbar-toggler {
     border-color: #ffffff;
 }
+
+
 .amazon{
-    width: 120px;
+    display:flex;
+    justify-content: space-evenly;
+    width: 260px;
     margin: 0 auto;
 }
 .section {
