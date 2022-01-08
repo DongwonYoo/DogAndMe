@@ -47,3 +47,9 @@ h2{
     }
 }
 
+.amazon{
+    display:flex;
+    justify-content: space-evenly;
+    width: 260px;
+    margin: 0 auto;
+}
