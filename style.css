@@ -72,7 +72,7 @@ body {
 
 .image-dropping,
 .image-upload-wrap:hover {
-    background-color: #35465d82;
+    background-color: #35465d;
     border: 1.5px dashed #ffffff;
 }
 
@@ -124,7 +124,10 @@ body {
     border: 0;
     transition: all .2s ease;
 }
-
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+    
+}
 .nav-distance {
     padding: 2.1% 7.7%;
 }
