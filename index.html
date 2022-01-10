@@ -119,10 +119,10 @@
         function getLanguage() {
            return navigator.language || navigator.userLanguage;
        }
-       var langchage = navigator.language || navigator.userLanguage;
-       console.log(langchage);
+       var lang = navigator.language || navigator.userLanguage;
+       console.log("lang");
        if (navigator.language || navigator.userLanguage == ko-KR)
-       location.href = langchange+"/index.html";
+       location.href = lang+"/index.html";
        else
        location.href = "index.html";
 
