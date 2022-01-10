@@ -1,0 +1,242 @@
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #ffffff;
+}
+
+.file-upload {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
+    padding: 11% 4%;
+}
+.file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: -15%;
+    padding: 20px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #1FB264;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #15824B;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.file-upload-btn:hover {
+    background: #1AA059;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    width: 57.5%;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 1.5px #35465d;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #35465d;
+    border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.upload-text{
+    width: 58%;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: #35465d;
+    margin: 0 auto;
+}
+
+
+.remove-image {
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    border: solid 1.5px #35465d;
+    background-color: #35465d;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+    
+}
+.nav-distance {
+    padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 1.3rem;
+    margin-top: 2%;
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 1.68;
+    text-align: left;
+    color: #35465d;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+
+.amazon{
+    display:flex;
+    justify-content: space-evenly;
+    width: 260px;
+    margin: 0 auto;
+}
+.section {
+    margin-top: 10%;
+}
+
+.title {
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 1.67;
+    text-align: center;
+    color: #35465d;
+}
+
+.subtitle {
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+    margin-bottom: 2%;
+}
+
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+.result-messege{
+    margin-top: -1%;
+    color: #f36995;
+}
+.result-img img{
+    max-width: 15rem;
+    max-height: 25rem;
+}
+.result-body{
+    font-size: 1rem;
+    font-weight:bolder;
+}
+.result-explain{
+    font-size: 1.5rem;
+    color: #f36995;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5%;
+    text-align: center;
+}
+
+

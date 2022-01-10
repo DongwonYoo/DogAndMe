@@ -1,0 +1,55 @@
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+
+}
+p{
+    margin:0 auto;
+    width:50%;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.form-elements{
+    display: inline-block;
+    text-align: center;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+    
+}
+.nav-distance {
+    padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 1.3rem;
+    margin-top: 2%;
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 1.68;
+    text-align: left;
+    color: #35465d;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+.amazon{
+    display:flex;
+    justify-content: space-evenly;
+    width: 260px;
+    margin: 0 auto;
+}
