@@ -28,16 +28,102 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">私がワンワンだったら？</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="app.html">アプリダウンロード</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mail.html">お問い合わせ</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="amazon">
+        <iframe
+            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=20&l=ur1&category=gift_certificates&banner=1GFNZE4YM1HZKFWSAV02&f=ifr&linkID=884665ae3a4abfaa85e58df119a8bee3&t=rkskek1210-22&tracking_id=rkskek1210-22"
+            width="120" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;"
+            frameborder="0"></iframe>
+
+        <iframe
+            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=20&l=ur1&category=music&f=ifr&linkID=94ed9fe2e29d809530d1156dd036bad2&t=rkskek1210-22&tracking_id=rkskek1210-22"
+            width="120" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;"
+            frameborder="0"></iframe>
+        <!-- amazon -->
+    </div>
+    <section class="section">
+        <h1 class="title">私に似ているワンワンは？</h1>
+        <h2 class="subtitle"> AIが探してくれる私と似ているワンちゃん</h2>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="container file-upload">
+        <!-- <div class="icon-img"><img src="img/siva.ico"></div> -->
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="img/upload.png" class="mt-5 upload" style="width:20%">
+                <h3 class="mb-5 pb-4 pt-4 upload-text">クリックして写真をアップロードしてください</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AIがあなたに似合うワンワンを探しています</p>
+            </div>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox_wq4b"></div>
+
+            <p class="mb-3 result-messege"></p>
+            <div class="mt-3 mb-3 result-img"></div>
+            <p class="result-body"></p>
+            <p class="result-explain"></p>
+            <div id="label-container"></div>
+            <div class="image-title-wrap">
+                <button type="button" onclick="location.reload(true)" class="remove-image">別の写真でやってみる </button>
+            </div>
+        </div>
+    </div>
+    <div id="disqus_thread"></div>
     <script>
         function getLanguage() {
            return navigator.language || navigator.userLanguage;
        }
        var lang = navigator.language || navigator.userLanguage;
        console.log()
-       if (navigator.language || navigator.userLanguage == ja-JP)
+       if (navigator.language || navigator.userLanguage == ko-KR)
        location.href = lang+"/index.html";
-       else
-       location.href = ko-KR+"/index.html";
+
    </script>
     <script>
         /**
