@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="ko">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2852373568945877"
+    crossorigin="anonymous"></script>
+    <!--googleAdsense-->
+    <link rel="shortcut icon" href="/siva.ico" type="image/x-icon">
+    <link rel="icon" href="/siva.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="AYlATDSzHZ5qXUF1DAePJod7-GNB1Z1w8cURA53xIaE" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta description content="AIを利用して相性の良い犬を探してみよう">
+    <meta name="keywords"
+        content="AI,マシンラーニング,犬,子犬,犬おすすめ,顔面認識,顔面認識AI,Tiktok,insta,韓流,ビックデータ,BIGdata,머신러닝,딥러닝,안면인식,얼굴인식,닮은개찾기,dogandme,ワンワンと私">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>닮은멍멍이는?</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">닮은강아지찾아보기</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="app.html">어플다운로드</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mail.html">문의사항</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <div class="amazon">
+        <iframe
+            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=20&l=ur1&category=gift_certificates&banner=1GFNZE4YM1HZKFWSAV02&f=ifr&linkID=884665ae3a4abfaa85e58df119a8bee3&t=rkskek1210-22&tracking_id=rkskek1210-22"
+            width="120" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;"
+            frameborder="0"></iframe>
+
+        <iframe
+            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=20&l=ur1&category=music&f=ifr&linkID=94ed9fe2e29d809530d1156dd036bad2&t=rkskek1210-22&tracking_id=rkskek1210-22"
+            width="120" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;"
+            frameborder="0"></iframe>
+        <!-- amazon -->
+    </div>
+    <section class="section">
+        <h1 class="title">닮은 강아지는??</h1>
+        <h2 class="subtitle"> 인공지능으로 찾아보는 닮은강아지</h2>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="container file-upload">
+        <!-- <div class="icon-img"><img src="img/siva.ico"></div> -->
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="img/upload.png" class="mt-5 upload" style="width:20%">
+                <h3 class="mb-5 pb-4 pt-4 upload-text">클릭해서 사진을 업로드 해주세요</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AI가 닮은 멍멍이를 찾고있습니다~</p>
+            </div>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox_wq4b"></div>
+
+            <p class="mb-3 result-messege"></p>
+            <div class="mt-3 mb-3 result-img"></div>
+            <p class="result-body"></p>
+            <p class="result-explain"></p>
+            <div id="label-container"></div>
+            <div class="image-title-wrap">
+                <button type="button" onclick="location.reload(true)" class="remove-image">다른 사진으로 하기 </button>
+            </div>
+        </div>
+    </div>
+    <div id="disqus_thread"></div>
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://chamchiyoo.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script type="text/javascript">
+        // More API functions here:
+        // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+        // the link to your model provided by Teachable Machine export panel
+        const URL = "https://teachablemachine.withgoogle.com/models/hrMShiMic/";
+
+        let model, webcam, labelContainer, maxPredictions;
+
+        // Load the image model and setup the webcam
+        async function init() {
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+
+            // load the model and metadata
+            // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+            // or files from your local hard drive
+            // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) { // and class labels
+                labelContainer.appendChild(document.createElement("div"));
+            }
+        }
+
+        // run the webcam image through the image model
+        async function predict() {
+            // predict can take in an image, video or canvas html element
+            var image = document.getElementById("face-image");
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability)); //整列
+            console.log(prediction[0].className);
+            var resultMessege;
+            var resultBody;
+            var resultExplain;
+            var resultImg;
+            switch (prediction[0].className) {
+                case "BorderCollie":
+                    resultMessege = "세계에서 제일 영리한 개 보더콜리";
+                    resultBody = "균형잡히고 건강한 외모";
+                    resultExplain =
+                        "활력이 넘치고 의욕적이고 친구에게 친절하다.초면엔 사람이나 동물에게 낯가림을 하지만 훌륭한 적응력에 친화력이 좋다.\
+                        영리하기 때문에 효과적으로 꾀병을 부리기도 하고 삐지기도 한다. 원하는 것이 있으면 공격적인 모습을 보여서라도 반드시 손에 넣는다.";
+                    resultImg = ("<img src=\"img/Border.jpg\">");
+                    break;
+                case "Shepherd":
+                    resultMessege = "충성심 강한 셰퍼드";
+                    resultBody = "훌륭한 근육질에, 보기좋은 곡선의 몸을 가지고 있다";
+                    resultExplain = "용감하지만 사납지않다.냉정하고 침착하다. 개로서 완벽에 가까운 능력을 가지고 있다. 머리가 좋고 충성심이 강하고\
+                    ,대담하며 애정이 많고 책임감이 강한 셰퍼드는 만능이라 해도 과언이 아니다.";
+                    resultImg = ("<img src=\"img/shepherd.jpg\">");
+                    break;
+                case "Dalmatian":
+                    resultMessege = "착하고 생기발랄한 달마시안";
+                    resultBody = "직사각형의 단단한 근육질의 몸에 반점이 뚜렷하게 형성 돼어 있고, 우아한 걸음걸이를 가지고 있다.(태어날땐 반점이없다)";
+                    resultExplain = "명량하고 상냥하다. 부끄러워 하거나 머뭇거림이 없고, 긴장하거나 공격적인 모습도 보이지 않는다. 채력이 좋고 물놀이나 \
+                    야외에서 활동하는걸 좋아한다.";
+                    resultImg = ("<img src=\"img/dalma.jpg\">");
+                    break;
+                case "Doberman":
+                    resultMessege = "늠름한 얼굴의 보디가드 도베르만";
+                    resultBody = "네모난 모양의 근육질의몸매와 우아하고 귀족적인 외모";
+                    resultExplain = "차분하고 친밀감이 있으며 가족에게 대단히 헌신적이다. 일을하는 능력,용기 힘든일도 끝까지 해내는 훌륭한 인내력 까지 가지고 있다";
+                    resultImg = ("<img src=\"img/Dobermann.jpeg\">");
+                    break;
+                case "Retriever":
+                    resultMessege = "너무너무너무착한 천사 골든리트리버";
+                    resultBody = "황금색털을 가지고 있고 길고 윤기흐는 털이 너무 아름다워서 많은 사랑을 받는다";
+                    resultExplain = "영리한 견종 탑5에 들어갈 정도로 머리가 좋고 100장의 옐로우 카드를 들고있고, 한 숨 자고 일어나면 옐로우카드가 초기화 된다고 말 할 정로도 착하다.\
+                    누군가 자기를 괴롭혀도 99번까지는 용서해 줄 정도로 인내력이 강하다는 의미다. 그렇다고 겁이 많은것도 아니고 자신과 가까운 사람이 공격을 당할때는 그때는 확실하게 성격을 보여준다.";
+                    resultImg = ("<img src=\"img/Smile.jpg\">");
+                    break;
+                case "Maltese":
+                    resultMessege = "한국에서 제일 사랑받는 말티즈";
+                    resultBody = "아담하고 순백의 실크와 같은 광택이 나는 털을 가지고있고 검고 동그란 눈동자가 특징이다.";
+                    resultExplain = "지적이고 우하하다. 활발하고 명랑하며 작은몸에 어울리지 않게 용감하다. 사람의 마음에 민감하게 반응하며 어리광도부릴줄 안다. 작지만 단호하며 애정이 깊으나 질투도 강하다.\
+                     모두에게 친절하지만 어린아이들을 라이벌이라고 여겨서 대드는 경향이 있으므로 서열훈련에 신경써야 한다.";
+                    resultImg = ("<img src=\"img/mal.jpg\">");
+                    break;
+                case "Bulldog":
+                    resultMessege = "다부진 근육질의 불독";
+                    resultBody = "큰 몸집을 가지고 있으며 전체적으로 낮고 납작하며 강한 인상을 준다. 머리는 몸에 비해 조금 큰편이다.";
+                    resultExplain = "외모는 조금 못생겼지만(?), 성격이 유쾌하고 가족과 친구들에게는 다정하게 대한다. 단호하 성격, 강인함, 활동성이 느껴진다. \
+                    민첩하고 대담하며 충성심이 강하고 용감하다. 잘때 코를 곤다.";
+                    resultImg = ("<img src=\"img/Bull.jpg\">");
+                    break;
+                case "Beagle":
+                    resultMessege = "스누피의 모델이 된 비글";
+                    resultBody = "몸집은 작지만 근육질의 몸을 가지고 있다. 크게 늘어진 귀,늘어진 입모양이 특징이다.";
+                    resultExplain = "활발하고 낙천적인 성격을 가지고 있다. 애교가 많은 편이며 나이가 들어도 활발하고 가족들과 잘 지낸다. 체력적으로 강하고 환경변화에 적응을 잘한다. \
+                    주인 이외의 사람에게도 우호적이다. 관심있는것을 따라서 단독행동을 하기도 하므로 주의가 필요하다";
+                    resultImg = ("<img src=\"img/Bea.jpeg\">");
+                    break;
+                case "Bichon":
+                    resultMessege = "인형같은 외모의 비숑프리제";
+                    resultBody = "몽실몽실 나있는 털이 마치 솜사탕, 목화 솜, 눈사람 같다";
+                    resultExplain = "비숑프리제는 대단히 영리하고, 충성심도 강하다. 친근하며 품에 안기는걸 좋아한다. 외향적이고 활발한 성격이므로 노는걸 좋아한다. 긴장을 별로 하지않고. \
+                    초면인 사람이나 개를 만나도 사교성이 아주 좋다. 적응력이 굉장이 훌륭하고 독립심이 강하다. 전체적으로 웃는 얼굴이며 고양이와도 친하게 지낼수 있을 정도로 성격도 좋다. 작은몸에 비해 힘은 센 편이다.";
+                    resultImg = ("<img src=\"img/Bichon.jpg\">");
+                    break;
+                case "SharPei":
+                    resultMessege = "세계 제일 진기한 샤페이";
+                    resultBody = "머리와 몸통 전체적으로 주름이 잡혀있고 작은 귀의 하마를 닮은 입모양의 독특한 외형";
+                    resultExplain = "성격은 고집불통이며 자존심이 세다. 애정표현이 별로 없고 차분한 면도 있으나 주인에게는 애정이 깊다.\
+                    특징은 추위에 약하며 운동량이 많고 달리는 것을 좋아한다.";
+                    resultImg = ("<img src=\"img/SharPei.jpeg\">");
+                    break;
+                case "Schnauzer":
+                    resultMessege = "노는게 제일 좋은 슈나우져";
+                    resultBody = "튼튼하고 날씬하다. 체격은 중간쯤이다.";
+                    resultExplain = "항상 바쁘고 부지런하다. 자기주장이 강하며 노는걸 좋아한다. 어린아이를 좋아하고 필요할 때엔 경계심을 늦추지 않는다. \
+                    또 용감하고 끈기 있으며 날씨 변화에 강하다.";
+                    resultImg = ("<img src=\"img/Schnauzer.jpeg\">");
+                    break;
+                case "ShibaInu":
+                    resultMessege = "대장부 시바견";
+                    resultBody = "튼튼하고 근육질의 체격을 가지고 있다.";
+                    resultExplain = "주인에게 충성심이 강하고 경계심이 강하다. 또 귀소본능이 강하다. 행동력이 있지만 냉정하다. 달리는 걸 좋아한다.\
+                    깔끔한 것이 고양이 같고, 낯선 사람에게는 냉정하다. 독립적인 성격을 가지고 있으나 가족들과는 잘 지낸다. 그러나 때로 다른 개들과 싸우는걸 즐기기도 한다.";
+                    resultImg = ("<img src=\"img/siba.jpeg\">");
+                    break;
+                case "Shih-tzu":
+                    resultMessege = "명나라 황제에게 사랑받았던 시츄";
+                    resultBody = "く입과 코가 짧고 눈이크다. 생후 3개월이면 얼굴주위에 털이 국화처럼 난다고 해서 국화개라는 별명도 있다.";
+                    resultExplain = "성격은 모든 강아지중에서 가장 차분한 편이다. 일반적인 가정견 중에서 공격적인 편이다. \
+                    주인에게는 애교나 정이 없지만 처음보는 사람에게는 애교가 있고 상대가 좋아할 만할 반을 해주므로 주인의 마음에 깊은 배신감과 상처를 줄 때가 있다.";
+                    resultImg = ("<img src=\"img/Shih.jpeg\">");
+                    break;
+                case "AmericanBully":
+                    resultMessege = "의외로 똑똑한 아메리칸불리";
+                    resultBody = "크고 넓은 머리, 두껍고 짧은 목 과 넓은 어깨의 근육질 체형이다.";
+                    resultExplain = "겉보기 와는 다르게 머리가 좋지만 식탐이 강하다. 가정견 목적으로 개량 되어서 공격성은 별로 없으나 개체에 따라 편차가 있는 편이다";
+                    resultImg = ("<img src=\"img/American.jpeg\">");
+                    break;
+                case "AkitaInu":
+                    resultMessege = "일본을 대표하는 아키타견";
+                    resultBody = "머리는 삼각형이고 얼굴이 모여 있지만 여우를 닮았다고 말하는 사람들도 많다.";
+                    resultExplain = "겁이 없고 샤냥에 능하며 주인에 대한 충성심이 강하다. 애교가 없고, 노는 것을 좋아하지도 않는다. \
+                    영역의식이 강해서 주변을 지키려는 본능이 강하다. 그래서 영역을 침범하는 상대는 누구든 공격한다. 상대가 곰이라 할지라도";
+                    resultImg = ("<img src=\"img/Akita.jpeg\">");
+                    break;
+                case "YorkshireTerrier":
+                    resultMessege = "움직이는 보석 요크셔테리어";
+                    resultBody = "요크셔테리어의 상징이자 가장 큰 매력은 털이다. 이목구비가 뚜렷하며 \
+                    흰자가 거의 보이지 않는 크고 동그란 눈도 상당히 매력적이다";
+                    resultExplain = "요크셔테리어는 대체로 괴팍한 성격으로  유명하다. 의사표현이 적극적이고 주인에 대한 집중력도 대단히 높다.\
+                    주인’만’ 사랑하고 다른사람은 무시하는 등 주인에 대한 집착이 심한 편이다. 마치 요조숙녀 같은 성격이 고양이 처럼 느껴지기도 한다. 천성적으로 사냥개라서 활발한 성격이다";
+                    resultImg = ("<img src=\"img/york.jpeg\">");
+                    break;
+                case "JindoDog":
+                    resultMessege = "한국을 대표하는 진돗개";
+                    resultBody = "얼굴은 정면에서 보면 팔각형에 가까운 형태를 하고 있고, 튼튼한 턱에 전체적인 인상은 탄탄하고 균형 잡힌 체형이다.";
+                    resultExplain = "진돗개는 주인에 대한 충성심과 복종심이 강하고, 귀소본능도 강하다. 또 대담하고 용감한 것으로 유명하다.늑대처럼 주인이 우두머리가 되면 평생 충성을 다하고 자기 영역의식이 굉장이 강하다. \
+                    서열의식이 강해서 어린이나 노약자를 깔보고 공격하는경우도 있다. 그리고 첫 주인을 오랫동안 잊지못해서, 강아지 때 부터 키우지 않고 성견을 분양 받았을 경우 도망가는 경우도 가끔있다.";
+                    resultImg = ("<img src=\"img/jindo.jpeg\">");
+                    break;
+                case "ChowChow":
+                    resultMessege = "중국을 대표하는 차우차우";
+                    resultBody = "사자를 닮은 외형을 하고 있으며 자세에서 당당함과 위엄이 느껴지며 뼈대가 튼튼하다.";
+                    resultExplain = "차분해서 경비견으로 훌륭하다.독립적이고 충성심이 강하나 사람에게 무관심한 면도 있다. 한편 주인에게는 절대적인 충성심을 보인다.\
+                     겉으로 보기에는 얌전해 보이지만 실상은 아주 예민하고 날카롭다.";
+                    resultImg = ("<img src=\"img/chow.jpeg\">");
+                    break;
+                case "Chihuahua":
+                    resultMessege = "제일 작은 강아지 치와와";
+                    resultBody = "치와와는 세계에서 가장 작은 품종이다. 귀는 크고 쫑긋하며 눈은 크고 약간 튀어나와 있다.";
+                    resultExplain = "치와와를 상징하는 말은’분노’이다. 구글에서 치와와를 영어로 검색하면 2번째 연관검색어가 ‘Angry’나올정도이다. 몸집이 작음에도 불구하고 불같이 사납고 공격적이고, \
+                    질투심이 강하며 두려움이 없는 성격이다. 지능은 낮은편으로 하위10%에 속한다.";
+                    resultImg = ("<img src=\"img/chiwawa.jpeg\">");
+                    break;
+                case "CaneCorso":
+                    resultMessege = "이탈이아 최고의 경비견 카네코르소";
+                    resultBody = "태어날때부터 근육질의 몸을 가지고 있다.";
+                    resultExplain = "우리나라에선 영화 베테랑에서 유아인이 키운 개로 유명한카네코르소는 경계심이 강하고 순간적인 속도가 가장 빠른 견종이다. \
+                    주인,가족 그리고 자기영역을 지키려고 하는 성격이 강하기 때문에 낯선 사람이 영역을 침범하거나 가족에게 해가 된다고 판단하면 위험한 상황이 벌어질 수 있으므로 주의가 필요하다.";
+                    resultImg = ("<img src=\"img/cane.jpeg\">");
+                    break;
+                case "ToyPoodle":
+                    resultMessege = "뽀글뽀글 푸들";
+                    resultBody = "균형잡인 체형에 푸틀의 특징인 곱슬 털이 매력적이다. 외모에서 부터 영리함이 느껴진다.";
+                    resultExplain = "지능이 탑3에 들정도로 뛰어나다. 상냥하고 쾌활하며 충성심이 강하다. 애교가 많지만 가끔 새침때기처럼 행동하기도 한다.\
+                    점잖은 외모와 달리 높은 활동성을 요구하기때문에 자주 산책을 시켜야 하고 혼자 있기 싫어하는 성격이다.";
+                    resultImg = ("<img src=\"img/Toy.jpeg\">");
+                    break;
+                case "Pomeranian":
+                    resultMessege = "요즘대세 포메라니안";
+                    resultBody = "털이 몸에 붙어있지않고 푹신푹신한 솜뭉치 같은 외모가 특징이다.\
+                    사랑스러운 외모로 전세계적으로 인기를 얻고 있다";
+                    resultExplain = "외모와 달리 실제 성격은 약간 사납고 다혈질 적이며 인내심이 없고 예민하다.치와와 보다는 조금 떨어지지만 공격성이 매우 높은 편이다.(그러나 화를내도 귀엽다) \
+                    주인을 자신과 동등한 존재로 여기는 경향이 있으며 영리하고 호기심도 많다.";
+                    resultImg = ("<img src=\"img/pome.jpeg\">");
+                    break;
+                case "Poodle":
+                    resultMessege = "뽀글뽀글 푸들";
+                    resultBody = "균형잡인 체형에 푸틀의 특징인 곱슬 털이 매력적이다. 외모에서 부터 영리함이 느껴진다.";
+                    resultExplain = "지능이 탑3에 들정도로 뛰어나다. 상냥하고 쾌활하며 충성심이 강하다. \
+                    애교가 많지만 가끔 새침때기처럼 행동하기도 한다.점잖은 외모와 달리 높은 활동성을 요구하기때문에 자주 산책을 시켜야 하고 혼자 있기 싫어하는 성격이다.";
+                    resultImg = ("<img src=\"img/poo.jpeg\">");
+                    break;
+                case "Husky":
+                    resultMessege = "눈동자가 매력적인 시베리안 허스키";
+                    resultBody = "튼튼한 근육과 균형잡힌 몸을 가진 늑대를 가장 닮은 품종으로 추위를 이기기 위해 두꺼운 털을 가지고 있다.";
+                    resultExplain = "영리하며 기본적으로 단체생활에 익숙해져 있어 남에게 민폐를 끼치는 경우가 거의 없다. 날카로운 눈매 때문에 투견처럼 보이기도 \
+                    하지만 보기와는 다르게 대체로 성격이 온순한 편이다. 언제든지 달릴 준비가 되어 있을 정도로 활동적이기 때문에 한번 달리기 시작하면 따라 잡을수 없을 정도로 빠르게 달린다. \
+                    뛰어 다니다가 적당히 자고 배고파서 깼는데 누가 부르면 슬슬 돌아가서 밥이나 먹으면 그만이라는 행동양식을 가지고 있다. ";
+                    resultImg = ("<img src=\"img/siverian.jpeg\">");
+                    break;
+                default:
+                    resultMessege = "다른사진으로 시도해 보시겠습니까?";
+            }
+            $('.result-messege').html(resultMessege);
+            $('.result-img').html(resultImg);
+            $('.result-body').html(resultBody);
+            $('.result-explain').html(resultExplain);
+
+
+        }
+    </script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+
+                    $('.image-title').html(input.files[0].name);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+                init().then(() => {
+                    console.log("Hello")
+                    predict();
+                    $('#loading').hide();
+                });
+
+
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function () {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function () {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61d57f2a79646e8b"></script>
+
+
+</body>
+<!-- Copyright (c) 2022 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+</html>
