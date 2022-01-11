@@ -1,0 +1,47 @@
+body {
+    
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #ffffff;
+}
+.appname{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.icon{
+    width: 256px;
+    margin: 0 auto;
+}
+.icon img{
+    margin-bottom: 2rem;
+}
+.list{
+    text-align: center;
+    
+    
+}
+ul{
+    padding-right: 2rem;
+    list-style: none;
+    display: inline-block;
+    
+}
+ul li{
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    
+}
+ul li img{
+    width:3.5rem;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color:black
+}
+
+ul li a:hover{
+    color:black;
+}
+
