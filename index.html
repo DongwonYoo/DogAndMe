@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<html lang="ja">
+<html lang="en">
 <head>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2852373568945877"
@@ -120,7 +120,10 @@
        var langch = navigator.language || navigator.userLanguage;
        
        if (navigator.language || navigator.userLanguage == ko-KR)
-       location.href = ko-KR+"/index.html";
+       location.href = langch+"/index.html";
+       else{
+        location.href = ja+"/index.html";
+       }
     //    else
     //    location.href = ja/+ja+"/index.html";
 
