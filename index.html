@@ -121,8 +121,9 @@
        
        if (navigator.language || navigator.userLanguage == ko-KR)
        location.href = langch+"/index.html";
-       else(navigator.language || navigator.userLanguage == ja-JP)
+       else if (navigator.language || navigator.userLanguage == ja-JP)
        location.href = langch+"/index.html";
+       else location.href = langch+"/index.html";
 
    </script> 
     <script>
