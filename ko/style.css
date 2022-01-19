@@ -182,7 +182,7 @@ body {
     }
 }
 .result-messege{
-    margin-top: -1%;
+    margin-top: 1%;
     color: #f36995;
 }
 .result-img img{
@@ -204,6 +204,7 @@ p {
 }
 
 .spinner-border {
+    margin-bottom: 1%;
     display: inline-block;
     width: 2rem;
     height: 2rem;
