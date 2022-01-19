@@ -9,14 +9,13 @@
 <body>
     <script>
         function getLanguage() {
-                return navigator.language || navigator.userLanguage;
-            }
-            var lang = navigator.language || navigator.userLanguage;
-            
-            if (lang == ko-KR || lang == ko)
-            location.href = "ko/index.html";
-            else
-            location.href = "ja/index.html";
-     </script> 
+        return navigator.language || navigator.userLanguage;
+        }
+        var langch = navigator.language || navigator.userLanguage;
+        if (navigator.language == ko || navigator.userLanguage == ko-KR)
+        location.href = ko+"/index.html";
+        else
+        location.href = ja+"/index.html";
+        </script>
 </body>
 </html>
