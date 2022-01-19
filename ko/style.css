@@ -2,6 +2,38 @@ body {
     font-family: 'Kosugi Maru', sans-serif;
     background-color: #ffffff;
 }
+.list{
+    text-align: center;
+    
+    
+}
+ul{
+    padding-right: 2rem;
+    list-style: none;
+    display: inline-block;
+    
+}
+ul li{
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    float: left;
+    padding-right:1rem;
+}
+ul li img{
+    width:3.5rem;
+    
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color:black
+}
+
+ul li a:hover{
+    color:black;
+}
+
 
 .file-upload {
     background-color: #ffffff;
