@@ -33,7 +33,15 @@ ul li a{
 ul li a:hover{
     color:black;
 }
+.icon{
+    width: 256px;
+    margin: 0 auto;
+    text-align: center;
+}
+.icon img{
+    width: 60%;
 
+}
 
 .file-upload {
     background-color: #ffffff;
