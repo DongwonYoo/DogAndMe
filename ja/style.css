@@ -283,3 +283,7 @@ p {
 }
 
 
+.link{
+    text-decoration: none;
+    color:#222
+}

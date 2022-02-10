@@ -193,7 +193,7 @@ ul li a:hover{
     margin: 0 auto;
 }
 .section {
-    margin-top: 0.4rem
+    margin-top: 0.4rem  
 }
 
 .title {
@@ -286,3 +286,7 @@ p {
    padding-top: 1rem;
 }
 
+.link{
+    text-decoration: none;
+    color:#222
+}
